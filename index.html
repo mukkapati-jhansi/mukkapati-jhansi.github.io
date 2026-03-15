@@ -5,13 +5,19 @@
 <meta charset="UTF-8">
 <title>Jhansi Portfolio</title>
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
+font-family:'Poppins', sans-serif;
 }
 
 body{
@@ -19,7 +25,7 @@ background:#0f172a;
 color:white;
 }
 
-/* Navigation */
+/* NAVBAR */
 
 header{
 display:flex;
@@ -33,7 +39,7 @@ top:0;
 
 nav a{
 color:white;
-margin-left:20px;
+margin-left:25px;
 text-decoration:none;
 font-size:18px;
 }
@@ -42,10 +48,10 @@ nav a:hover{
 color:#38bdf8;
 }
 
-/* Hero Section */
+/* HERO */
 
 .hero{
-height:80vh;
+height:90vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
@@ -53,17 +59,25 @@ align-items:center;
 text-align:center;
 }
 
+.hero img{
+width:160px;
+height:160px;
+border-radius:50%;
+margin-bottom:20px;
+border:4px solid #38bdf8;
+}
+
 .hero h1{
-font-size:50px;
+font-size:45px;
 color:#38bdf8;
 }
 
 .hero p{
-font-size:20px;
 margin-top:10px;
+font-size:20px;
 }
 
-/* Sections */
+/* SECTIONS */
 
 section{
 padding:70px 10%;
@@ -74,25 +88,30 @@ color:#38bdf8;
 margin-bottom:20px;
 }
 
-/* Skills */
+/* SKILLS */
 
 .skills span{
 background:#38bdf8;
 color:black;
-padding:8px 15px;
-margin:5px;
+padding:10px 15px;
+margin:6px;
 display:inline-block;
 border-radius:20px;
 font-weight:bold;
 }
 
-/* Projects */
+/* PROJECT CARDS */
 
 .project{
 background:#1e293b;
 padding:20px;
 margin-top:20px;
 border-radius:10px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:scale(1.03);
 }
 
 .project a{
@@ -100,11 +119,11 @@ color:#38bdf8;
 text-decoration:none;
 }
 
-/* Certificates */
+/* CERTIFICATES */
 
 .certificate{
 background:#1e293b;
-padding:15px;
+padding:20px;
 margin-top:15px;
 border-radius:10px;
 }
@@ -113,14 +132,28 @@ border-radius:10px;
 color:#38bdf8;
 }
 
-/* Contact */
+/* CONTACT */
 
 .contact a{
 color:#38bdf8;
 text-decoration:none;
+margin-right:15px;
+font-size:20px;
 }
 
-/* Footer */
+/* RESUME BUTTON */
+
+.resume-btn{
+background:#38bdf8;
+padding:10px 20px;
+border:none;
+border-radius:5px;
+font-weight:bold;
+cursor:pointer;
+margin-top:10px;
+}
+
+/* FOOTER */
 
 footer{
 text-align:center;
@@ -134,7 +167,9 @@ background:#1e293b;
 <body>
 
 <header>
-<h3>Jhansi</h3>
+
+<h2>Jhansi</h2>
+
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
@@ -142,19 +177,26 @@ background:#1e293b;
 <a href="#certificates">Certificates</a>
 <a href="#contact">Contact</a>
 </nav>
+
 </header>
 
-<!-- Hero Section -->
+<!-- HERO -->
 
 <div class="hero">
 
-<h1>Hi, this is Jhansi 👋</h1>
+<img src="profile.jpg">
 
-<p>Artificial Intelligence Student | Machine Learning Enthusiast</p>
+<h1>Hi, I'm Jhansi 👋</h1>
+
+<p>Artificial Intelligence | Machine Learning | Web Developer</p>
+
+<a href="resume.pdf">
+<button class="resume-btn">Download Resume</button>
+</a>
 
 </div>
 
-<!-- About -->
+<!-- ABOUT -->
 
 <section id="about">
 
@@ -162,13 +204,13 @@ background:#1e293b;
 
 <p>
 I am an Artificial Intelligence student passionate about Machine Learning,
-Deep Learning and building intelligent applications.
-I enjoy developing real-world AI solutions and web applications.
+Deep Learning and building intelligent systems. I enjoy developing AI
+applications and solving real-world problems through technology.
 </p>
 
 </section>
 
-<!-- Skills -->
+<!-- SKILLS -->
 
 <section id="skills">
 
@@ -189,47 +231,51 @@ I enjoy developing real-world AI solutions and web applications.
 
 </section>
 
-<!-- Projects -->
+<!-- PROJECTS -->
 
 <section id="projects">
 
 <h2>Projects</h2>
 
 <div class="project">
-<h3>Fake News Detection</h3>
-<p>Deep learning model using LSTM and Transformer.</p>
 
-<a href="https://github.com/mukkapati-jhansi/fake-news-detection" target="_blank">
+<h3>Fake News Detection</h3>
+
+<p>Deep learning project using RNN, LSTM and Transformer models.</p>
+
+<a href="https://github.com/mukkapati-jhansi" target="_blank">
 View Project on GitHub
 </a>
 
 </div>
 
 <div class="project">
+
 <h3>Weather App</h3>
 
-<p>Web app that shows live weather updates.</p>
+<p>Web application that displays real-time weather data.</p>
 
-<a href="https://github.com/yourgithub/weather-app" target="_blank">
-View Project on GitHub
+<a href="https://github.com/mukkapati-jhansi" target="_blank">
+View Project
 </a>
 
 </div>
 
 <div class="project">
+
 <h3>Tic Tac Toe Game</h3>
 
-<p>Interactive game built using JavaScript.</p>
+<p>Interactive web game built using JavaScript.</p>
 
-<a href="https://github.com/yourgithub/tic-tac-toe" target="_blank">
-View Project on GitHub
+<a href="https://github.com/mukkapati-jhansi" target="_blank">
+View Project
 </a>
 
 </div>
 
 </section>
 
-<!-- Certificates -->
+<!-- CERTIFICATES -->
 
 <section id="certificates">
 
@@ -237,47 +283,32 @@ View Project on GitHub
 
 <div class="certificate">
 <p>Wipro TalentNext Java Full Stack Certification</p>
-
-<a href="2200031441_WIPRO TALENTNEXT JAVA FULL STACK CERTIFICATE.pdf" target="_blank">
-View Certificate
-</a>
+<a href="2200031441_WIPRO TALENTNEXT JAVA FULL STACK CERTIFICATE.pdf" target="_blank">View Certificate</a>
 </div>
 
 <div class="certificate">
 <p>Red Hat Certified Enterprise Application Developer</p>
-
-<a href="2200031441_Red Hat Certified Enterprise Application Developer.pdf" target="_blank">
-View Certificate
-</a>
+<a href="2200031441_Red Hat Certified Enterprise Application Developer.pdf" target="_blank">View Certificate</a>
 </div>
 
 <div class="certificate">
 <p>Automation Anywhere Certified Essentials RPA Professional</p>
-
-<a href="2200031441_Automation Anywhere University Certified Essentials RPA Professional (.pdf" target="_blank">
-View Certificate
-</a>
+<a href="2200031441_Automation Anywhere University Certified Essentials RPA Professional (.pdf" target="_blank">View Certificate</a>
 </div>
 
 <div class="certificate">
 <p>Salesforce Certified AI Associate</p>
-
-<a href="2200031441_ SALESFORCE CERTIFIED AI ASSOCIATE.pdf" target="_blank">
-View Certificate
-</a>
+<a href="2200031441_ SALESFORCE CERTIFIED AI ASSOCIATE.pdf" target="_blank">View Certificate</a>
 </div>
 
 <div class="certificate">
-<p>Infosys Springboard Internship 5.0 – Truth Seeker</p>
-
-<a href="Final Certificate.pdf" target="_blank">
-View Certificate
-</a>
+<p>Infosys Internship 5.0 Truth Seeker</p>
+<a href="Final Certificate.pdf" target="_blank">View Certificate</a>
 </div>
 
 </section>
 
-<!-- Contact -->
+<!-- CONTACT -->
 
 <section id="contact">
 
@@ -285,22 +316,19 @@ View Certificate
 
 <div class="contact">
 
-<p>Email:
-<a href="mailto:2200031441cseh@gmail.com">
-2200031441cseh@gmail.com
-</a>
+<p>
+<i class="fa-solid fa-envelope"></i>
+<a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a>
 </p>
 
-<p>GitHub:
-<a href="https://github.com/mukkapati-jhansi" target="_blank">
-github.com/mukkapati-jhansi
-</a>
+<p>
+<i class="fa-brands fa-github"></i>
+<a href="https://github.com/mukkapati-jhansi" target="_blank">GitHub</a>
 </p>
 
-<p>LinkedIn:
-<a href="https://linkedin.com/in/yourprofile" target="_blank">
-LinkedIn Profile
-</a>
+<p>
+<i class="fa-brands fa-linkedin"></i>
+<a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
 </p>
 
 </div>
